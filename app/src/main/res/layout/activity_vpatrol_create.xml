@@ -1,0 +1,248 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jichu_bg"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context="com.oil.activity.VPatrolCreateActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/title_bg" >
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_back"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_activity_vp_work_record"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/choose_pipe_info"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="@color/text_bg" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/jichu_bg"
+                android:paddingTop="3dp"
+                android:stretchColumns="1" >
+
+                <TableRow
+                    android:background="@color/jichu_bg"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text="@string/pipe_name"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/edittext_border"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <Spinner
+                            android:id="@+id/sp_pl_v"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/jichu_bg" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/jichu_bg"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text="@string/start_end_paragragh"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/edittext_border"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <Spinner
+                            android:id="@+id/sp_section_v"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/jichu_bg" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/jichu_bg"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text="@string/pipe_specification"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/edittext_border"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <Spinner
+                            android:id="@+id/sp_spec_v"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/jichu_bg" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/jichu_bg"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/valve_name"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/et_valve_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/edittext_border"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:padding="7dp"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/jichu_bg"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="@string/check_date"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/edittext_border"
+                        android:padding="7dp"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:background="@color/jichu_bg"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:padding="5dp"
+                        android:text="@string/check_man"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/et_checker"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/edittext_border"
+                        android:inputType="text"
+                        android:maxLength="10"
+                        android:padding="7dp"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/jichu_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <Button
+                        android:id="@+id/bt_next"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dip"
+                        android:background="@drawable/btn_border"
+                        android:text="@string/next_step"
+                        android:textColor="@color/jichu_bg" />
+                </RelativeLayout>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+        android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/modify_password"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/change_passwd_back_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_back" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center" >
+
+        <TableRow android:layout_marginTop="10dip"
+        android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/now_password"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/change_passwd_oldpasswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:padding="8dip"
+                android:maxLines="1"
+                android:inputType="textPassword"/>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dip"
+        android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/new_password"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/change_passwd_newpasswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:maxLines="1"
+                android:padding="8dip"
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dip"
+        android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/verify_password"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/change_passwd_oknewpasswd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:maxLines="1"
+                android:padding="8dip"
+                android:inputType="textPassword" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip" >
+
+        <Button
+            android:id="@+id/change_passwd_ok_bt"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_border"
+            android:text="@string/verify_ok"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</LinearLayout>

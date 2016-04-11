@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false"><shape>
+         
+
+
+            <padding android:bottom="2dp" android:left="5dp" android:right="5dp" android:top="2dp" />
+
+            <gradient android:endColor="#e8fbff" android:startColor="#e8fbff" />
+        </shape></item>
+    <item android:state_pressed="true"><shape>
+          
+
+
+            <padding android:bottom="2dp" android:left="5dp" android:right="5dp" android:top="2dp" />
+
+            <gradient android:endColor="#39b1ef" android:startColor="#39b1ef" />
+        </shape></item>
+
+</selector>

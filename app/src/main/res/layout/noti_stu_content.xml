@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jichu_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="@color/title_bg" >
+
+                <TextView
+                    android:id="@+id/noti_stu_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/notification_studys"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/back_noti_stu_content"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/bt_back"
+                    android:text="" />
+            </RelativeLayout>
+        
+
+        <ScrollView
+            android:id="@+id/content_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@color/layout_border"
+                    android:padding="2dp" >
+
+                    <TextView
+                        android:id="@+id/content_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/jichu_bg"
+                        android:gravity="center_horizontal"
+                        android:text="eeeeeeeeee"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/content_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/content_title"
+                        android:background="@color/jichu_bg"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:text="eeeeeeeeee"
+                        android:textSize="14sp" />
+<!-- 
+                       //  -->
+                    <TextView
+                        android:id="@+id/content_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/content_time"
+                        android:background="@color/jichu_bg"
+                        android:padding="5dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/stu_filedown_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/stu_filedown_path"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="xxxxxxxxxxxxxxx" />
+
+                    <ImageButton
+                        android:id="@+id/stu_filedown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/file" />
+
+                    <ImageView
+                        android:id="@+id/extra_picture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/stu_filedown_path"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="200dp"
+                        android:maxWidth="200dp"
+                        android:padding="5dp"
+                        android:scaleType="centerInside" />
+                </RelativeLayout>
+
+                <com.oil.layout.MyListView
+                    android:id="@+id/noti_stu_feeback_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" />
+
+                <Button
+                    android:id="@+id/noti_stu_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_border"
+                    android:text="@string/reply"
+                    android:textColor="@color/jichu_bg"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_pro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#35e6e6e6"
+        android:visibility="visible" >
+
+        <ProgressBar
+            style="@style/mProgress_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a0e6e6e6"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/text_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/dialog_filename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/jichu_bg"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="eeeeeeeee"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/dialog_fileinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/jichu_bg"
+                android:padding="10dp"
+                android:text="eeeeeeeee"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/dialog_verify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/jichu_bg"
+                    android:text="下载"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/dialog_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/jichu_bg"
+                    android:text="取消"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

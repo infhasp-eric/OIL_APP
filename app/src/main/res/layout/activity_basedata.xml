@@ -1,0 +1,295 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@color/title_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/jichuziliao1"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <!-- 第二部分 -->
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/interval" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/jichuziliao_Layout_main1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                android:background="@color/jichu_bg"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="18dip"
+ 					android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/pipe" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/jichuziliao1_text1"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jichuziliao_Layout_main2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                android:gravity="center_vertical"
+                android:background="@color/jichu_bg" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="18dip"
+ 					android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/plcurve" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/jichuziliao1_text2"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+<!-- 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#000000" /> -->
+
+            <LinearLayout
+                android:id="@+id/jichuziliao_Layout_main3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                android:gravity="center_vertical"
+                android:background="@color/jichu_bg" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="18dip"
+ 					android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/insul" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/jichuziliao1_text3"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jichuziliao_Layout_main4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                android:gravity="center_vertical"
+                android:background="@color/jichu_bg" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="18dip"
+ 					android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/cathode" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/jichuziliao1_text4"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jichuziliao_Layout_main5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                android:layout_marginTop="1dip"
+                android:gravity="center_vertical"
+                android:background="@color/jichu_bg" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="18dip"
+ 					android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/rcl" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/jichuziliao1_text5"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jichuziliao_Layout_main6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                android:gravity="center_vertical"
+                android:layout_marginTop="1dip"
+                android:background="@color/jichu_bg" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="18dip"
+ 					android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/fmain" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/jichuziliao1_text6"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jichuziliao_Layout_main7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                android:layout_marginTop="1dip"
+                android:gravity="center_vertical"
+                android:background="@color/jichu_bg" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="18dip"
+ 					android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/pipepoll" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/jichuziliao1_text7"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jichuziliao_Layout_main8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:paddingTop="15dip"
+                android:gravity="center_vertical"
+                android:paddingBottom="15dip"
+                android:background="@color/jichu_bg" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="18dip"
+ 					android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/vp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="阀室、阀井巡检工作记录"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jichuziliao_Layout_main9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dip"
+                android:paddingBottom="15dip"
+                android:gravity="center_vertical"
+                android:layout_marginTop="1dip"
+                android:layout_marginBottom="1dip"
+                android:background="@color/jichu_bg" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="18dip"
+ 					android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/vm" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="阀室、阀井维护保养工作记录"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/title_bg"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_circle_style"
+                android:button="@null"
+                android:gravity="right|center_vertical"
+                android:paddingRight="10dp"
+                android:text="@string/temp_work"
+                android:textSize="18sp"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/instrus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_circle_style"
+                android:button="@null"
+                 android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/temp_askfor"
+                android:textSize="18sp"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/bt_creat"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bt_creat"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="gone" />
+        
+        <Button
+            android:id="@+id/temp_create"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginRight="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_menu"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+</LinearLayout>

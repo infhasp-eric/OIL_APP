@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/menu_vp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="@color/jichu_bg"/>
+
+    <LinearLayout
+        android:id="@+id/lin_radio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e6e6e6"
+        android:layout_weight="9"
+        android:gravity="center_vertical" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/menu_study"
+                style="@style/radioStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/notice_select"
+                android:text="@string/menu_notification" />
+
+            <RadioButton
+                android:id="@+id/menu_base"
+                style="@style/radioStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/base_select"
+                android:text="@string/menu_base" />
+
+            <RadioButton
+                android:id="@+id/menu_temp"
+                style="@style/radioStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/temporary_select"
+                android:text="@string/menu_temp" />
+
+            <RadioButton
+                android:id="@+id/menu_one"
+                style="@style/radioStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/one_select"
+                android:text="@string/menu_one" />
+
+            <RadioButton
+                android:id="@+id/menu_high"
+                style="@style/radioStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/high_select"
+                android:text="@string/menu_high" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

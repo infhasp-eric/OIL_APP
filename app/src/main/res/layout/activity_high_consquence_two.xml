@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jichu_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@color/title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/static_high_resource"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/high_create_back"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_back"
+            android:text="" />
+
+        <Button
+            android:id="@+id/high_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="@string/save"
+            android:textColor="@color/jichu_bg"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_bg" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/jichu_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/recognitioner"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/high_recognition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/jichu_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/static_high_number"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/high_number_rank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/jichu_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/high_position"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/high_palce_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    android:maxLength="200"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,3" >
+
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    android:background="@color/jichu_bg" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text="@string/start_longitude"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/high_start_longitude"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text="@string/start_latitude"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/high_start_latitude"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="2dp"
+                    android:background="@color/jichu_bg" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text="@string/end_longitude"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/high_end_longitude"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text="@string/end_latitude"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/high_end_latitude"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableRow
+                android:layout_marginTop="2dp"
+                android:background="@color/jichu_bg" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/high_start"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/high_start"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="2dp"
+                android:background="@color/jichu_bg" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/high_end"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/high_end"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="2dp"
+                android:background="@color/jichu_bg" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/high_length"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/high_length"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/jichu_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/high_score"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/high_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/jichu_bg" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/high_feature"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/high_feature_discription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/multi_edittext_border"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:maxLength="200"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/jichu_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:padding="5dp"
+                    android:text="@string/recognition_update_time"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/high_update_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:hint="@string/choose_update_time"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/jichu_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/scene_photo_one"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/high_picone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:hint="@string/choose_file"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/jichu_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/scene_photo_two"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/high_pictwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:hint="@string/choose_file"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/jichu_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/scene_photo_three"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/high_picthree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:hint="@string/choose_file"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/jichu_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/scene_photo_four"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/high_picfour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:hint="@string/choose_file"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/jichu_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/scene_photo_five"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/high_picfive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:hint="@string/choose_file"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <Button
+                    android:id="@+id/high_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:background="@drawable/btn_border"
+                    android:text="@string/add"
+                    android:textColor="@color/jichu_bg"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

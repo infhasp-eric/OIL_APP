@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jichu_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/title_bg"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/high_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/high_radio_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_circle_style"
+                android:button="@null"
+                android:gravity="right|center_vertical"
+                android:paddingRight="10dp"
+                android:text="@string/dynamic_tab"
+                android:textColor="@color/jichu_bg"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/high_radio_static"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_circle_style"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/static_tab"
+                android:textColor="@color/jichu_bg"
+                android:textSize="18sp" />
+        </RadioGroup>
+        <Button
+            android:id="@+id/high_cons_create"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginRight="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_menu"/>
+    </RelativeLayout>
+
+    <com.oil.dialog.CustiomViewPager
+        android:id="@+id/highc_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="title_bg">#ff6f00</color>
+    <color name="lucency">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="layout_border">#d2d2d2</color>
+    <color name="jichu_bg">#ffffff</color>
+    <color name="interval">#d7d6d6</color>
+    <color name="jichutitle">#28a9ec</color>
+    <color name="text_bg">#e6e6e6</color>
+    <color name="menu">#f7f6f6</color>
+    <color name="spinner_drop">#ffffff</color>
+    <color name="tab_bg_normal">#000066</color>
+    <color name="tab_bg_select">#9966FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="timecolor">#676767</color>
+
+</resources>

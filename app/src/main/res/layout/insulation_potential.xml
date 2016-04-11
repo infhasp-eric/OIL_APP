@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:background="@color/title_bg" >
+
+            <Button
+                android:id="@+id/bt_back"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bt_back"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/bt_save"
+                android:layout_toRightOf="@id/bt_back"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/jichuziliao1_text3"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/bt_save"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:text="@string/save"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/jichu_bg"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/position"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/et_position"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:padding="5dp"
+                        android:textSize="18sp" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp" >
+
+                        <LinearLayout
+                            android:id="@+id/lin_month_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/jichu_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="一月"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/img1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0dp"
+                                android:src="@drawable/oo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_amonth1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/protect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_b1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/unprotect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_m1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp" >
+
+                        <LinearLayout
+                            android:id="@+id/lin_month_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/jichu_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="二月"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/img2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0dp"
+                                android:src="@drawable/oo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_amonth2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/protect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_b2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/unprotect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_m2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp" >
+
+                        <LinearLayout
+                            android:id="@+id/lin_month_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/jichu_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="三月"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/img3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0dp"
+                                android:src="@drawable/oo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_amonth3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/protect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_b3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/unprotect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_m3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp" >
+
+                        <LinearLayout
+                            android:id="@+id/lin_month_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/jichu_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="四月"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/img4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0dp"
+                                android:src="@drawable/oo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_amonth4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/protect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_b4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/unprotect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_m4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp" >
+
+                        <LinearLayout
+                            android:id="@+id/lin_month_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/jichu_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="五月"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/img5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0dp"
+                                android:src="@drawable/oo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_amonth5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/protect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_b5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/unprotect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_m5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp" >
+
+                        <LinearLayout
+                            android:id="@+id/lin_month_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/jichu_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="六月"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/img6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0dp"
+                                android:src="@drawable/oo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_amonth6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/protect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_b6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/unprotect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_m6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp" >
+
+                        <LinearLayout
+                            android:id="@+id/lin_month_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/jichu_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="七月"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/img7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0dp"
+                                android:src="@drawable/oo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_amonth7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/protect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_b7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/unprotect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_m7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp" >
+
+                        <LinearLayout
+                            android:id="@+id/lin_month_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/jichu_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="八月"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/img8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0dp"
+                                android:src="@drawable/oo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_amonth8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/protect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_b8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/unprotect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_m8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp" >
+
+                        <LinearLayout
+                            android:id="@+id/lin_month_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/jichu_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="九月"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/img9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0dp"
+                                android:src="@drawable/oo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_amonth9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/protect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_b9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/unprotect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_m9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp" >
+
+                        <LinearLayout
+                            android:id="@+id/lin_month_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/jichu_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="十月"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/img10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0dp"
+                                android:src="@drawable/oo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_amonth10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/protect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_b10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/unprotect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_m10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp" >
+
+                        <LinearLayout
+                            android:id="@+id/lin_month_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/jichu_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="十一月"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/img11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0dp"
+                                android:src="@drawable/oo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_amonth11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/protect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_b11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/unprotect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_m11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="2dp" >
+
+                        <LinearLayout
+                            android:id="@+id/lin_month_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/jichu_bg"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="十二月"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/img12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="0dp"
+                                android:src="@drawable/oo" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lin_amonth12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/protect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_b12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/jichu_bg"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/unprotect_end"
+                                    android:textSize="18sp" />
+
+                                <EditText
+                                    android:id="@+id/et_month_m12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:background="@null"
+                                    android:inputType="numberDecimal"
+                                    android:padding="5dp"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <Button
+                        android:id="@+id/bt_add"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/btn_border"
+                        android:text="@string/add"
+                        android:textColor="@color/jichu_bg"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</ScrollView>
